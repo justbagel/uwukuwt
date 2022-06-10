@@ -1,0 +1,16 @@
+Dark Grey: 37313d
+
+Red?: af5c54
+
+Dark Blue: 273154
+
+Blue: 677cab
+
+Light Blue: 72c6e0
+
+Yellow: f6ad4e
+
+Skin: fce9da
+
+Cream white: fef6f3
+
