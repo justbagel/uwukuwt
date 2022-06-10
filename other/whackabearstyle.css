@@ -25,7 +25,7 @@
 
 .hole:after {
     display: block;
-    background: url(images/bush.png) bottom center no-repeat;
+    background: url('images/bush.png') bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
