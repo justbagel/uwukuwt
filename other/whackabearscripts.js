@@ -60,9 +60,8 @@ function whack(e) {
     if (!e.isTrusted) return;
     score++;
     this.parentNode.classList.remove('up');
-    this.firstChild.src="/images/Uruka2_.png";
-    // this.style.background = "url('/images/Uruka2.png') bottom center no-repeat;";
-    setInterval(() => this.firstChild.src="/images/Uruka1_.png", 400);
+    this.firstChild.src="images/Uruka2_.png";
+    setInterval(() => this.firstChild.src="images/Uruka1_.png", 400);
     scoreBoard.textContent = "Score: " + score;
 }
 

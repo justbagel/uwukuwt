@@ -2,17 +2,11 @@
     text-align: center;
 }
 
-/* .score {
-    color: rgb(104, 94, 114);
-    margin-top: 0%;
-} */
-
 .wabTitle {
     display: flex;
     align-items: center;
     gap: 100px;
     justify-content: center;
-    /* justify-items: center; */
 }
 
 .game {
@@ -31,7 +25,7 @@
 
 .hole:after {
     display: block;
-    background: url(/images/bush.png) bottom center no-repeat;
+    background: url(images/bush.png) bottom center no-repeat;
     background-size: contain;
     content: '';
     width: 100%;
@@ -42,7 +36,7 @@
 }
 
 .mole {
-    /* background: url('/images/Uruka1_.png') bottom center no-repeat; */
+    /* background: url('images/Uruka1_.png') bottom center no-repeat; */
     /* background-size: 50%; */
     position: absolute;
     top: 100%;
@@ -51,20 +45,6 @@
     transition: all 0.4s ease;
 }
 
-.whacked {
-    /* background: url('/images/Uruka2.png') bottom center no-repeat; */
-    /* background-size: 50%; */
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-}
-
 .hole.up .mole {
-    top: 0;
-}
-
-.hole.up .whacked {
     top: 0;
 }
