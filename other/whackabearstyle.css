@@ -36,7 +36,7 @@
     bottom: -30px;
 }
 
-.mole {
+.bear {
     /* background: url('images/Uruka1_.png') bottom center no-repeat; */
     /* background-size: 50%; */
     position: absolute;
@@ -46,6 +46,6 @@
     transition: all 0.4s ease;
 }
 
-.hole.up .mole {
+.hole.up .bear {
     top: 0;
 }

@@ -1,11 +1,17 @@
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
-const moles = document.querySelectorAll('.mole');
+const bears = document.querySelectorAll('.bear');
 const countdownTimer = document.querySelector(".timer");
+const whackSound = document.getElementById("urukaGun");
+let soundOn = true;
 let lastHole;
 let timeUp = true;
 let score = 0;
 let time = 20;
+
+function toggleSound() {
+    soundOn = soundOn ? false : true;
+}
 
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
@@ -62,7 +68,10 @@ function whack(e) {
     this.parentNode.classList.remove('up');
     this.firstChild.src="images/Uruka2_.png";
     setInterval(() => this.firstChild.src="images/Uruka1_.png", 400);
+    if(whackSound && soundOn){
+        whackSound.play();
+    }
     scoreBoard.textContent = "Score: " + score;
 }
 
-moles.forEach(mole => mole.addEventListener('click', whack));
+bears.forEach(bear => bear.addEventListener('click', whack));

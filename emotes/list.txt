@@ -1,0 +1,13 @@
+["fujiku3Uoh",
+"UrukaCheer",
+"UrukaCursed",
+"UrukaCursedComfy",
+"UrukaCursedGun",
+"UrukaCursedHands",
+"UrukaCursedPolite",
+"UrukaCursedRecorder",
+"UrukaDerp",
+"UrukaLightstick",
+"UrukaPray",
+"UrukaThisIsFine",
+"UrukaWah-1"]
