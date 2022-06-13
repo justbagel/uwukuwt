@@ -30,24 +30,63 @@
         <div class="container">
             <div class="navigation">
                 <div style="border: #72c6e0 1px solid;">
-                    <div style="border-bottom: #72c6e0 1px solid; color: #fef6f3;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        <i class="bi bi-music-note-beamed"></i> BGM
+                    </div>
+                    <div id="urukaBgmPlayer" style="margin-top: 5px;">
+                        <audio id="urukaBgm" loop>
+                            <source src="public/UrukaBGM.mp3" type="audio/mp3" />
+                            Your web browser does not support HTML5.
+                        </audio> 
+                        <button id="playBgmButton" class="playerButton" type="button" onclick="playPauseBgm()"><i class="bi bi-play-fill"></i></button>
+                        <button class="playerButton" type="button" onclick="bgmVolumeDown()"><i class="bi bi-volume-down-fill"></i></button>
+                        <button class="playerButton" type="button" onclick="bgmVolumeUp()"><i class="bi bi-volume-up-fill"></i></button>
+                    </div>
+                </div>
+                <br>
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
                         Navigation
                     </div>
                     <a href="index.html">Home</a><br>
+                    <a href="abouturuka.html">About Uruka</a><br>
                     <a href="instants.html">Bear Sounds</a><br>
-                    <a href="#">Test</a><br>
-                    <a href="#">Test</a><br>
+                    <a href="cwingegallery.html">Cwinge Gallery</a><br>
                     <a href="#">Test</a><br>
                     <a href="#">Test</a><br>
                     <a href="#">Test</a><br>
                     <a href="whackabear.html">Whack a Bear</a><br>
                 </div>
-                <div>
-                    <p class="blinking" style="font-size: 10pt; margin-bottom: 0px;">Follow Uwuka</p>
-                    <a id="linkYoutube" href="https://www.youtube.com/channel/UCjXJYPsKxoJyc-1RPB6dSyw" target="_blank"><i class="bi bi-youtube"></i></a>
-                    <a id="linkTwitch" href="https://www.twitch.tv/fujikurauruka" target="_blank"><i class="bi bi-twitch"></i></a>
-                    <a id="linkTwitter" href="https://twitter.com/fujikurauruka" target="_blank"><i class="bi bi-twitter"></i></a>
-                    <a id="linkDiscord" href="https://discord.gg/phaseconnect" target="_blank"><i class="bi bi-discord"></i></a>
+                <br>
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        Our Leader
+                    </div>
+                    <img src="images/youtube1.jpg" width="100%">
+                    <p style="color: #72c6e0;">
+                        It's Fujikura Uruka,
+                        that's Urufu to you.
+                    </p>
+                    <div>
+                        <p class="blinking" style="font-size: 10pt; margin-bottom: 0px;">Follow Uwuka</p>
+                        <a id="linkYoutube" href="https://www.youtube.com/channel/UCjXJYPsKxoJyc-1RPB6dSyw" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a id="linkTwitch" href="https://www.twitch.tv/fujikurauruka" target="_blank"><i class="bi bi-twitch"></i></a>
+                        <a id="linkTwitter" href="https://twitter.com/fujikurauruka" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a id="linkDiscord" href="https://discord.gg/phaseconnect" target="_blank"><i class="bi bi-discord"></i></a>
+                    </div>
+                </div>
+                <br>
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        Her Music
+                    </div>
+                    <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/Xnvt1IRaO1c" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe style="border-radius:0px"
+                        src="https://open.spotify.com/embed/artist/3kqKjRxIZo2cs5PoYi4ys3?utm_source=generator" width="99%" height="200"
+                        frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </div>
             <div class="content">
@@ -326,40 +365,10 @@
 
         </div>
         <div>
-            <footer style="font-size: 8pt; text-align: center; color: gray;">Created by Bagel with platonic love.</footer>
+            <footer style="font-size: 8pt; text-align: center; color: gray;">Created by Bagel with platonic love. Not affiliated with Uruka or Phase Connect.</footer>
         </div>
     </div>
     <script src="scripts.js"></script>
-    <script>
-        const colors = ['677cab', '72c6e0', 'f6ad4e', 'af5c54', 'fce9da'];    
-        const buttons = document.querySelectorAll(".instantsButton");
-        const emotes = ["fujiku3Uoh",
-                        "UrukaCheer",
-                        "UrukaCursed",
-                        "UrukaCursedComfy",
-                        "UrukaCursedGun",
-                        "UrukaCursedHands",
-                        "UrukaCursedPolite",
-                        "UrukaCursedRecorder",
-                        "UrukaDerp",
-                        "UrukaLightstick",
-                        "UrukaPray",
-                        "UrukaThisIsFine",
-                        "UrukaWah-1"];
-
-        let id;
-        buttons.forEach(b => {
-            id = Math.floor(Math.random() * colors.length);
-            eId = Math.floor(Math.random() * emotes.length);
-            b.style.backgroundColor = "#" + colors[id];
-            b.style.originalColor = "#" + colors[id];
-            b.firstChild.src = "emotes/" + emotes[eId] + ".png";
-            b.addEventListener('click', (e) => {
-                b.style.backgroundColor = "#37313d";
-                setTimeout(() => b.style.backgroundColor = b.style.originalColor, 150);
-            }, false);
-        })
-        
-    </script>
+    <script src="other/instantsscripts.js"></script>
 </body>
 </html>

@@ -69,8 +69,7 @@ a, a :active {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
-
+    justify-content: center;
 }
 
 .uruga {
@@ -121,6 +120,30 @@ a, a :active {
 
 #OOOO {
     font-size: 4vh;
+}
+
+#urukaBgmPlayer {
+    width: 200px;
+    height: 30px;
+    /* background-color: #fef6f3; */
+    /* border: #72c6e0 1px solid; */
+    /* border-radius: 50%; */
+    /* color: #37313d; */
+    /* font-size: 14pt; */
+}
+
+.playerButton {
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14pt;
+    color: #fef6f3;
+}
+
+.playerButton :hover {
+    color: #f6ad4e;
 }
 
 #linkYoutube :hover {
