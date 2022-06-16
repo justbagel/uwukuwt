@@ -55,7 +55,7 @@ function startGame() {
         time = 20;
         countdownTimer.textContent = "Time: " + time;
         score = 0;
-        document.querySelector(".game").scrollIntoView();
+        document.querySelector(".wabTitle").scrollIntoView();
         timer();
         peep();
         setTimeout(() => timeUp = true, 20000)
