@@ -119,10 +119,10 @@
                     <label for="salivatingCheckbox"> Salivating</label> -->
                 </p>
                 <p></p>
-                <div class="fullBearContainer">
+                <div id="capture" class="fullBearContainer">
                     <img id="backgroundPic" class="backgroundPic" src="images/transparent.png">
-                    <div class="fullBear"></div>
-                    <!-- <img id="fullBear" src="images/expressions/Uruka_600x600.png"></img> -->
+                    <!-- <div class="fullBear"></div> -->
+                    <img class="fullBear" src="images/expressions/Uruka_600x600.png"></img>
                     <img id="Uruka_600x600_Blush_1" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_1.png">
                     <img id="Uruka_600x600_Blush_2" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_2.png">
                     <img id="Uruka_600x600_Blush_3" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_3.png">
@@ -178,6 +178,7 @@
                     <label htmlFor="bckgrdInput" className="form-label">Background image:</label>
                     <input className="form-control" type="file" id="bckgrdInput" accept="image/*"/>
                     <button type="button" onclick="clearBackground()">Clear</button>
+                    <button type="button" onclick="capture()">Download</button>
                 </p>
             </div>
             
@@ -191,5 +192,6 @@
     </div>
     <script src="scripts.js"></script>
     <script src="other/expressions.js"></script>
+    <script src="other/html2canvas.min.js"></script>
 </body>
 </html>

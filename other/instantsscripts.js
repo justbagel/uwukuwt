@@ -19,7 +19,13 @@ const emotes = ["fujiku3Uoh",
                 "UrukaPray",
                 "UrukaThisIsFine",
                 "UrukaWah-1",
-                "woke"]
+                "woke",
+                "UrukaCursedPray",
+                "UrukaEpic",
+                "UrukaPeek",
+                "UrukaSmile",
+                "UrukaSmug",
+                "UrukaWah"]
 
 let id;
 buttons.forEach(b => {
