@@ -255,4 +255,4 @@ function randomThumb(){
 
 randomThumb();
 
-setInterval(() => randomThumb(), 30000);
+setInterval(() => randomThumb(), 20000);
