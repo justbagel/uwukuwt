@@ -246,9 +246,10 @@ const thumbs = ["-f1MoNU2MnE",
 
 const streamThumb = document.getElementById("streamThumb");
 const vodLink = document.getElementById("vodLink");
+let max = thumbs.length;
 
 function randomThumb(){
-    let vidId = thumbs[Math.floor((Math.random() * 242) + 1)];
+    let vidId = thumbs[Math.floor((Math.random() * max) + 1)];
 
     streamThumb.src = "images/streamThumbs/" + vidId + ".jpg";
     vodLink.href = "https://www.youtube.com/watch?v=" + vidId;
