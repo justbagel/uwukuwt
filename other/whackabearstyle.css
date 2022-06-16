@@ -26,8 +26,8 @@
 .hole:after {
     display: block;
     /* background: url('https://justbagel.github.io/uwukuwt/images/bush.png') bottom center no-repeat; */
-    /* background: url('https://justbagel.github.io/uwukuwt/images/bush.png') bottom center no-repeat; */
-    background: url('https://uwukuwt.netlify.app/images/bush.png') bottom center no-repeat;
+    background: url('https://justbagel.github.io/uwukuwt/images/bush.png') bottom center no-repeat;
+    /* background: url('https://uwukuwt.netlify.app/images/bush.png') bottom center no-repeat; */
     background-size: contain;
     content: '';
     width: 100%;
