@@ -232,14 +232,15 @@ const thumbs = ["-f1MoNU2MnE",
                 "ZmRImCi4EvM",
                 "zT2w6RCHlGY",
                 "Zv7UT98rz9k",
-                "zXXOWI-Hg2w",
-                "_--0cRL5sfw",
-                "_32v5HiT_3I",
-                "_78rRgTRCCA",
-                "_hx5TYAYp20",
-                "_NfigBitu5E",
-                "_Qb-nzzhc8Q",
-                "_RQtNNo3KkU"]
+                "zXXOWI-Hg2w"]
+                // ,
+                // "_--0cRL5sfw",
+                // "_32v5HiT_3I",
+                // "_78rRgTRCCA",
+                // "_hx5TYAYp20",
+                // "_NfigBitu5E",
+                // "_Qb-nzzhc8Q",
+                // "_RQtNNo3KkU"]
 
 // console.log('thumbs.length', thumbs.length);
 
