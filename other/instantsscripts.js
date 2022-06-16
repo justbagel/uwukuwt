@@ -1,6 +1,7 @@
 const colors = ['677cab', '72c6e0', 'f6ad4e', 'af5c54', 'fce9da'];
 const buttons = document.querySelectorAll(".instantsButton");
 const emotes = ["fujiku3Uoh",
+                "Furuk_You",
                 "mindbreak",
                 "nice",
                 "shock",
