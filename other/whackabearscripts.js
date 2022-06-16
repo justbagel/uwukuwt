@@ -28,7 +28,7 @@ function randomHole(holes) {
 }
 
 function peep() {
-    const time = randomTime(400, 1000);
+    const time = randomTime(450, 950);
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(() => {
@@ -67,7 +67,8 @@ function whack(e) {
     score++;
     this.parentNode.classList.remove('up');
     this.firstChild.src="images/Uruka2_.png";
-    setInterval(() => this.firstChild.src="images/Uruka1_.png", 400);
+    // setInterval(() => this.firstChild.src="images/Uruka1_.png", 400);
+    setTimeout(() => this.firstChild.src="images/Uruka1_.png", 400);
     if(whackSound && soundOn){
         whackSound.play();
     }

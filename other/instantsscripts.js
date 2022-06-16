@@ -1,6 +1,10 @@
 const colors = ['677cab', '72c6e0', 'f6ad4e', 'af5c54', 'fce9da'];
 const buttons = document.querySelectorAll(".instantsButton");
 const emotes = ["fujiku3Uoh",
+                "mindbreak",
+                "nice",
+                "shock",
+                "Urugah",
                 "UrukaCheer",
                 "UrukaCursed",
                 "UrukaCursedComfy",
@@ -9,11 +13,12 @@ const emotes = ["fujiku3Uoh",
                 "UrukaCursedPolite",
                 "UrukaCursedRecorder",
                 "UrukaDerp",
+                "UrukaFire",
                 "UrukaLightstick",
                 "UrukaPray",
                 "UrukaThisIsFine",
                 "UrukaWah-1",
-                "UrukaFire"];
+                "woke"]
 
 let id;
 buttons.forEach(b => {

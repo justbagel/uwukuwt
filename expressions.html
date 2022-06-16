@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Page dedicated to the Uwukuwt and their leader: the awesome blue bear Fujikura Uruka."
+    />
+    <base href="https://justbagel.github.io/uwukuwt/">
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="other/expressions.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Uwukuwt</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <img id="kuwtmeeting" src="public/kuwt.png" alt="kuwt meeting">
+            <div class="uruga">
+                <div>
+                    <button class="urugaButton" type="button" onclick="playMedia('kultSounds')"><img src="images/Urukult.png" height="24" width="24"></button>
+                    <audio id="kultSounds" src="audio/uruga.mp3" preload="auto"></audio>
+                    
+                </div>
+                <marquee id="OOOO" class="blinking" scrolldelay="75">OOOOooOOOooooooOoOOoOOOOOOOoooo</marquee>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navigation">
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        <i class="bi bi-music-note-beamed"></i> BGM
+                    </div>
+                    <div id="urukaBgmPlayer" style="margin-top: 5px;">
+                        <audio id="urukaBgm" loop>
+                            <source src="public/UrukaBGM.mp3" type="audio/mp3" />
+                            Your web browser does not support HTML5.
+                        </audio> 
+                        <button id="playBgmButton" class="playerButton" type="button" onclick="playPauseBgm()"><i class="bi bi-play-fill"></i></button>
+                        <button class="playerButton" type="button" onclick="bgmVolumeDown()"><i class="bi bi-volume-down-fill"></i></button>
+                        <button class="playerButton" type="button" onclick="bgmVolumeUp()"><i class="bi bi-volume-up-fill"></i></button>
+                    </div>
+                </div>
+                <br>
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        Navigation
+                    </div>
+                    <a href="index.html">Home</a><br>
+                    <a href="abouturuka.html">About Uruka</a><br>
+                    <a href="instants.html">Bear Sounds</a><br>
+                    <a href="cwingegallery.html">Cwinge Gallery</a><br>
+                    <a href="expressions.html">Change Her Expressions</a><br>
+                    <a href="whackabear.html">Whack a Bear</a><br>
+                </div>
+                <br>
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        Our Leader
+                    </div>
+                    <img src="images/youtube1.jpg" width="100%">
+                    <p style="color: #72c6e0;">
+                        It's Fujikura Uruka,
+                        that's Urufu to you.
+                    </p>
+                    <div>
+                        <p class="blinking" style="font-size: 10pt; margin-bottom: 0px;">Follow Uwuka</p>
+                        <a id="linkYoutube" href="https://www.youtube.com/channel/UCjXJYPsKxoJyc-1RPB6dSyw" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a id="linkTwitch" href="https://www.twitch.tv/fujikurauruka" target="_blank"><i class="bi bi-twitch"></i></a>
+                        <a id="linkTwitter" href="https://twitter.com/fujikurauruka" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a id="linkDiscord" href="https://discord.gg/phaseconnect" target="_blank"><i class="bi bi-discord"></i></a>
+                    </div>
+                </div>
+                <br>
+                <div style="border: #72c6e0 1px solid;">
+                    <div style="border-bottom: #72c6e0 1px solid; color: #273154; background-color: #72c6e0;">
+                        Her Music
+                    </div>
+                    <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/3Iy-okkLYfM" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe style="border-radius:0px"
+                        src="https://open.spotify.com/embed/artist/3kqKjRxIZo2cs5PoYi4ys3?utm_source=generator" width="99%" height="200"
+                        frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="blinking" style="margin: 0px;">Change her expression</h1>
+                <br>
+                <label for="eyesCombobox">Eyes:</label>
+                <select name="eyesCombobox" id="eyesCombobox">
+                    <option value="none">None</option>
+                </select>
+                <label for="mouthCombobox">Mouth:</label>
+                <select name="mouthCombobox" id="mouthCombobox">
+                    <option value="none">None</option>
+                </select>
+                <label for="blushCombobox">Blush:</label>
+                <select name="blushCombobox" id="blushCombobox">
+                    <option value="none">None</option>
+                </select>
+                <label for="glassesCombobox">Glasses:</label>
+                <select name="glassesCombobox" id="glassesCombobox">
+                    <option value="none">None</option>
+                </select>
+                <p>
+                    <input type="checkbox" id="angwyCheckbox" name="angwyCheckbox">
+                    <label for="angwyCheckbox"> Angwy</label>
+                    <input type="checkbox" id="kiraCheckbox" name="kiraCheckbox">
+                    <label for="kiraCheckbox"> Sparkle</label>
+                    <input type="checkbox" id="sweatCheckbox" name="sweatCheckbox">
+                    <label for="sweatCheckbox"> Sweating</label>
+                    <!-- <input type="checkbox" id="salivatingCheckbox" name="salivatingCheckbox">
+                    <label for="salivatingCheckbox"> Salivating</label> -->
+                </p>
+                <p></p>
+                <div class="fullBearContainer">
+                    <img id="backgroundPic" class="backgroundPic" src="images/transparent.png">
+                    <div class="fullBear"></div>
+                    <!-- <img id="fullBear" src="images/expressions/Uruka_600x600.png"></img> -->
+                    <img id="Uruka_600x600_Blush_1" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_1.png">
+                    <img id="Uruka_600x600_Blush_2" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_2.png">
+                    <img id="Uruka_600x600_Blush_3" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_3.png">
+                    <img id="Uruka_600x600_Blush_4" class="hidden blush" src="images/expressions/Uruka_600x600_Blush_4.png">
+                    <img id="Uruka_600x600_Eyes_1" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_1.png">
+                    <img id="Uruka_600x600_Eyes_2" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_2.png">
+                    <img id="Uruka_600x600_Eyes_3" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_3.png">
+                    <img id="Uruka_600x600_Eyes_4" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_4.png">
+                    <img id="Uruka_600x600_Eyes_5" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_5.png">
+                    <img id="Uruka_600x600_Eyes_6" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_6.png">
+                    <img id="Uruka_600x600_Eyes_7" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_7.png">
+                    <img id="Uruka_600x600_Eyes_8" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_8.png">
+                    <img id="Uruka_600x600_Eyes_9" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_9.png">
+                    <img id="Uruka_600x600_Eyes_10" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_10.png">
+                    <img id="Uruka_600x600_Eyes_11" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_11.png">
+                    <img id="Uruka_600x600_Eyes_12" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_12.png">
+                    <img id="Uruka_600x600_Eyes_13" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_13.png">
+                    <img id="Uruka_600x600_Eyes_14" class="hidden eyes" src="images/expressions/Uruka_600x600_Eyes_14.png">
+                    <img id="Uruka_600x600_Mouth_1" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_1.png">
+                    <img id="Uruka_600x600_Mouth_2" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_2.png">
+                    <img id="Uruka_600x600_Mouth_3" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_3.png">
+                    <img id="Uruka_600x600_Mouth_4" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_4.png">
+                    <img id="Uruka_600x600_Mouth_5" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_5.png">
+                    <img id="Uruka_600x600_Mouth_6" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_6.png">
+                    <img id="Uruka_600x600_Mouth_7" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_7.png">
+                    <img id="Uruka_600x600_Mouth_8" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_8.png">
+                    <img id="Uruka_600x600_Mouth_9" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_9.png">
+                    <img id="Uruka_600x600_Mouth_10" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_10.png">
+                    <img id="Uruka_600x600_Mouth_11" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_11.png">
+                    <img id="Uruka_600x600_Mouth_12" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_12.png">
+                    <img id="Uruka_600x600_Mouth_13" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_13.png">
+                    <img id="Uruka_600x600_Mouth_14" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_14.png">
+                    <img id="Uruka_600x600_Mouth_15" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_15.png">
+                    <img id="Uruka_600x600_Mouth_16" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_16.png">
+                    <img id="Uruka_600x600_Mouth_17" class="hidden mouth" src="images/expressions/Uruka_600x600_Mouth_17.png">
+                    <img id="Uruka_600x600_Sweat" class="hidden extra" src="images/expressions/Uruka_600x600_Sweat.png">
+                    <img id="Uruka_600x600_Glasses_1" class="hidden glasses" src="images/expressions/Uruka_600x600_Glasses_1.png">
+                    <img id="Uruka_600x600_Glasses_2" class="hidden glasses" src="images/expressions/Uruka_600x600_Glasses_2.png">
+                    <img id="Uruka_600x600_Glasses_3" class="hidden glasses" src="images/expressions/Uruka_600x600_Glasses_3.png">
+                    <img id="Uruka_600x600_Glasses_4" class="hidden glasses" src="images/expressions/Uruka_600x600_Glasses_4.png">
+                    <img id="Uruka_600x600_Glasses_5" class="hidden glasses" src="images/expressions/Uruka_600x600_Glasses_5.png">
+                    <img id="Uruka_600x600_Angwy" class="hidden extra" src="images/expressions/Uruka_600x600_Angwy.png">
+                    <img id="Uruka_600x600_Kira" class="hidden extra" src="images/expressions/Uruka_600x600_Kira.png">
+                    <!-- <img id="Uruka_600x600_Salivating" class="hidden extra" src="images/expressions/Uruka_600x600_Salivating.png"> -->
+                    <!-- <img class="hidden" src="images/expressions/"> -->
+                </div>
+                <p style="text-align: justify;">
+                    <label htmlFor="bckgrdInput" className="form-label">Background image:</label>
+                    <input className="form-control" type="file" id="bckgrdInput" accept="image/*"/>
+                    <button type="button" onclick="clearBackground()">Clear</button>
+                </p>
+            </div>
+            
+
+        </div>
+        <div>
+            <footer style="font-size: 8pt; text-align: center; color: gray;">
+                Art and page created by <a href="https://twitter.com/bagel_1902" target="_blank">Bagel</a> with platonic love. Not affiliated with Uruka or Phase Connect.
+            </footer>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="other/expressions.js"></script>
+</body>
+</html>

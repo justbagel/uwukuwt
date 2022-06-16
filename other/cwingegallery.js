@@ -1,7 +1,7 @@
 const modal = document.getElementById("myModal");
 const modalImg = document.getElementById("img01");
 const gallery = document.getElementById("cwingeGalleryScreenshots");
-const max = 38;
+const max = 44;
 const span = document.getElementsByClassName("close")[0];
 var imgs;
 
